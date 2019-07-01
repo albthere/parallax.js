@@ -2,13 +2,6 @@ Parallax.js
 ===========
 
 Simple parallax scrolling implemented as a jQuery plugin.  
-[http://pixelcog.com/parallax.js/](http://pixelcog.com/parallax.js/)
-
-
-Please also check our [v2.0.0-alpha](https://github.com/pixelcog/parallax.js/tree/v2.0.0-alpha)! We'd be happy to receive your feedback!
-
-**ATTENTION:** please use the issue tracker for bug reports and feature requests ONLY! For questions and topics which go along the lines "I cannot get this to work" please turn to [stackoverflow.com](https://stackoverflow.com/questions/tagged/parallax.js) for help and use the tag [parallax.js](https://stackoverflow.com/questions/tagged/parallax.js). Thank you for your understanding!
-
 
 ## Installation
 
@@ -24,14 +17,6 @@ npm i --save jquery-parallax.js
 yarn add jquery-parallax.js
 ```
 
-### Bower
-
-Please note that although Bower is still maintained, they recommend Yarn for new projects.
-
-```bash
-$ bower i --save parallax.js
-```
-
 ### Setup
 
 Include `parallax.min.js` in your document after including jQuery (compatible with jQuery >= 1.7).
@@ -45,20 +30,6 @@ Use these CDN links, provided by jsDelivr.com
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-```
-
-## Usage
-
-Please note, that `<!DOCTYPE html>` on top of your document is required!
-
-### Simple version via data attributes
-
-*Note: for more complex requirements we recommend using the [inner HTML markup](#using-inner-html-for-complex-content) below! With that it's possible to use the parallax effect with almost any HTML content*
-
-To easily add a parallax effect behind an element, add `data-parallax="scroll"` to the element you want to use, and specify an image with `data-image-src="/path/to/image.jpg"`.
-
-```html
-<div class="parallax-window" data-parallax="scroll" data-image-src="/path/to/image.jpg"></div>
 ```
 
 ### Via JavaScript
@@ -215,36 +186,5 @@ Note that when specifying these options as html data-attributes, you should conv
 	</tbody>
 </table>
 
-## Contributing
+w/The MIT License (MIT)
 
-If you have a pull request you would like to submit, please ensure that you update the minified version of the library along with your code changes.  This project uses [uglifyjs](https://www.npmjs.com/package/uglify-js) to perform code compression.
-
-Please use the following command:
-
-	uglifyjs parallax.js --comments -m -c -o parallax.min.js
-
-
-LICENSE
-=======
-
-The MIT License (MIT)
-
-Copyright (c) 2016 PixelCog Inc.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
